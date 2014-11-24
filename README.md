@@ -66,7 +66,7 @@ After the push Jenkins will run a build, and review your code on that build. Whe
 
 To see what went wrong go to Jenkins
 
-`smpt.us.to:5000`
+`http://smpt.us.to:5000`
 
 There you can select your project and see the latest build output.
 
