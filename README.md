@@ -142,7 +142,7 @@ The `-a` tells git to commit all changed files and the `--amend` tells git not t
 
 Dont forget to push the amended commit
 
-`git push origin HEAD:refs/for/master`
+`git push --no-thin origin HEAD:refs/for/master`
 
 gerrit will put this commit (the one we just amended) on the same page as the original commit. We can compare these so called patch sets to view what changes were made in the amended commit, based on the original commit.
 
