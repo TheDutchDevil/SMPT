@@ -62,6 +62,14 @@ Now we can push the commit to gerrit
 
 The `HEAD:refs/for/master` tells gerrit that this commit is to be merged into the remote master branch.
 
+After the push Jenkins will run a build, and review your code on that build. When Jenkins does not give a +1 you need to adjust your code until Jenkings approves.
+
+To see what went wrong go to Jenkins
+
+`smpt.us.to:5000`
+
+There you can select your project and see the latest build output.
+
 ###4. Wait for the review
 
 While you wait for your work to be reviewed you can continue to work (in a new branch).  
