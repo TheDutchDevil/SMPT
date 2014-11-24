@@ -9,16 +9,9 @@ Every time the local repo layout changes an ASCII illustration is included to cl
 
 **Using ssh**
 
-`git clone ssh://Tim@gerrit.ocb-applications.nl:29418/compi-ios`
-
-We  also need a gerrit-specific git hook that edits a unique Change-Id into a fresh commit.  
-Gerrit uses this to distinguish commits.
-
-`scp -p -P 29418 Tim@gerrit.ocb-applications.nl/hooks/commit-msg compi-ios/.git/hooks/`
-
-This can also be done in 1 line
-
-`git clone ssh://Tim@gerrit.ocb-applications.nl:29418/compi-ios && scp -p -P 29418 Tim@gerrit.ocb-applications.nl:hooks/commit-msg compi-ios/.git/hooks/`
+Go in Gerrit to Projects > List and select the project you want to clone.
+There you select 'Clone with commit-msg hook' and 'ssh'.
+You can clone with the generated string.
 
 **Local repo status**  
 
